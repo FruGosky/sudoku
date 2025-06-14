@@ -36,9 +36,13 @@ const rageCloseTab = async () => {
 	setTimeout(window.close, TIME_TO_CLOSE_TAB_AFTER_RAGE);
 };
 
-export default function RageButton() {
+export function RageButton() {
 	return (
-		<Button size="xs" onClick={rageCloseTab} color="var(--color-red-900)">
+		<Button
+			color="var(--color-red-900)"
+			size="xs"
+			onClick={void rageCloseTab}
+		>
 			{'Rage Button 🤬'}
 		</Button>
 	);

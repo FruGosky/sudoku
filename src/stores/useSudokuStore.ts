@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-import { shuffleArray } from '../utils/shuffle-array';
 import {
 	DEFAULT_GRID_SIZE,
 	DEFAULT_LIVES,
@@ -7,6 +6,7 @@ import {
 	DIFFICULTY_PERCENTAGES,
 	DEFAULT_DIFFICULTY,
 } from '../constants';
+import { shuffleArray } from '../utils/shuffle-array';
 import type {
 	TAvailableGameModals,
 	TCorrectGridSizes,
@@ -81,7 +81,7 @@ function generateCompleteSolution(
 ): number[][] {
 	const grid: number[][] = Array(size)
 		.fill(null)
-		.map(() => Array(size).fill(0));
+		.map(() => Array<typeof size>(size).fill(0));
 
 	// Fill diagonal subGrids first (they don't interfere with each other)
 	for (let i = 0; i < size; i += subGridSize) {

@@ -1,8 +1,8 @@
-import type { ReactNode } from 'react';
 import { MantineProvider } from '@mantine/core';
-import { Notifications } from '@mantine/notifications';
 import '@mantine/core/styles.css';
+import { Notifications } from '@mantine/notifications';
 import '@mantine/notifications/styles.css';
+import type { ReactNode } from 'react';
 
 type TAppMantineProviderProps = {
 	children: ReactNode;

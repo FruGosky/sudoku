@@ -1,6 +1,6 @@
 import { useSudokuStore } from '../stores/useSudokuStore';
-import type { TCell, TCorrectGridSizes } from '../types/game.types';
 import { NoteCellList } from './NoteCell';
+import type { TCell, TCorrectGridSizes } from '../types/game.types';
 
 type TCellProps = {
 	cell: TCell;
@@ -23,9 +23,7 @@ const getSquareBgColorClassName = (
 
 const getFontStyleClassNames = (cell: TCell): string => {
 	if (!cell.value) return '';
-	if (cell.value !== cell.correctValue) {
-		return 'text-red-800 font-semibold';
-	}
+	if (cell.value !== cell.correctValue) return 'text-red-800 font-semibold';
 	return 'font-extrabold';
 };
 
@@ -56,14 +54,14 @@ export function Cell({ cell, rowIndex, colIndex }: TCellProps) {
 	return (
 		<div
 			key={`${rowIndex}-${colIndex}`}
-			onClick={() => {
-				setSelectedCell(rowIndex, colIndex);
-			}}
 			className={`flex h-10 w-10 items-center justify-center border-1 border-solid select-none ${getFontStyleClassNames(cell)} ${
 				isSelected
 					? 'border-blue-500 bg-blue-500/20'
 					: `border-gray-400 ${squareBgColorClassName}`
 			} ${!isSelected && isSameValueSelected ? 'text-blue-800' : ''}`}
+			onClick={() => {
+				setSelectedCell(rowIndex, colIndex);
+			}}
 		>
 			{cell.value ? cell.value : <NoteCellList notes={cell.notes} />}
 		</div>

@@ -10,7 +10,7 @@ export function NoteCellList({ notes }: TNoteCellListProps) {
 
 	return (
 		<div
-			className={`grid h-full w-full text-center text-[0.7em] leading-[1.2em]`}
+			className="grid h-full w-full text-center text-[0.7em] leading-[1.2em]"
 			style={{
 				gridTemplateColumns: `repeat(3, 1fr)`,
 				gridTemplateRows: `repeat(3, 1fr)`,
@@ -49,7 +49,7 @@ function NoteCell({ notes, number }: TNoteCellProps) {
 		<span
 			key={number}
 			// add red font color if note cant be possible
-			className={`pointer-events-none flex h-full w-full cursor-default items-center justify-center`}
+			className="pointer-events-none flex h-full w-full cursor-default items-center justify-center"
 			style={{
 				opacity: notes.includes(number) ? 1 : 0,
 				backgroundColor: shouldRevealNumber

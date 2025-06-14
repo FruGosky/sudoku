@@ -1,29 +1,29 @@
 import { Modal } from '@mantine/core';
-import { useSudokuStore } from '../stores/useSudokuStore';
+import { PlayAgainButton } from '../components/PlayAgainButton';
+import { RageButton } from '../components/RageButton';
 import { FADED_MODAL_TRANSITION } from '../constants';
-import RageButton from '../components/RageButton';
-import PlayAgainButton from '../components/PlayAgainButton';
+import { useSudokuStore } from '../stores/useSudokuStore';
 
 const MODAL_CLASS_NAMES = {
 	title: '!text-2xl text-center text-red-600 !font-semibold',
 	header: '!justify-center !pr-4',
 };
 
-export default function GameOverModal() {
+export function GameOverModal() {
 	const isOpen = useSudokuStore((store) => store.openedModal === 'gameOver');
 
 	return (
 		<Modal
-			size="xs"
-			opened={isOpen}
-			onClose={() => {}}
-			title="Game Over"
-			classNames={MODAL_CLASS_NAMES}
 			centered
-			transitionProps={FADED_MODAL_TRANSITION}
-			withCloseButton={false}
+			classNames={MODAL_CLASS_NAMES}
 			closeOnClickOutside={false}
 			closeOnEscape={false}
+			opened={isOpen}
+			size="xs"
+			title="Game Over"
+			transitionProps={FADED_MODAL_TRANSITION}
+			withCloseButton={false}
+			onClose={() => {}}
 		>
 			<div className="text flex flex-col gap-4">
 				<div className="flex items-center justify-center gap-1">

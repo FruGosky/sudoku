@@ -1,6 +1,6 @@
 import { ActionIcon, Tooltip } from '@mantine/core';
-import { useSudokuStore } from '../stores/useSudokuStore';
 import { PencilIcon } from '../icons/PencilIcon';
+import { useSudokuStore } from '../stores/useSudokuStore';
 
 export function NoteModeSwitch() {
 	const isNoteMode = useSudokuStore((store) => store.isNoteMode);
@@ -10,7 +10,6 @@ export function NoteModeSwitch() {
 		<Tooltip label="Note mode (n)">
 			<ActionIcon
 				variant={isNoteMode ? 'filled' : 'outline'}
-				aria-label="Note mode"
 				onClick={toggleNoteMode}
 			>
 				<PencilIcon />

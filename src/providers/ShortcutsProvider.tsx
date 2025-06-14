@@ -59,9 +59,9 @@ export function ShortcutsProvider({ children }: TShortcutsProviderProps) {
 	};
 	return (
 		<div
-			onKeyDown={handleKeyDown}
-			tabIndex={-1}
 			style={{ outline: 'none' }}
+			tabIndex={-1}
+			onKeyDown={handleKeyDown}
 		>
 			{children}
 		</div>

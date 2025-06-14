@@ -1,5 +1,5 @@
-import type { TransitionProps } from '@mantine/core';
 import type { TCorrectGridSizes, TDifficulty } from './types/game.types';
+import type { TransitionProps } from '@mantine/core';
 
 // GRID
 export const VALID_GRID_SIZES = [4, 9, 16] as const;

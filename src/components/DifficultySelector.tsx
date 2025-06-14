@@ -1,9 +1,9 @@
-import { useSudokuStore } from '../stores/useSudokuStore';
 import { Select } from '@mantine/core';
 import { AVAILABLE_DIFFICULTIES } from '../constants';
+import { useSudokuStore } from '../stores/useSudokuStore';
 import type { TDifficulty } from '../types/game.types';
 
-export default function DifficultySelector() {
+export function DifficultySelector() {
 	const difficulty = useSudokuStore((store) => store.difficulty);
 	const setDifficulty = useSudokuStore((store) => store.setDifficulty);
 
@@ -15,8 +15,8 @@ export default function DifficultySelector() {
 
 	return (
 		<Select
-			size="xs"
 			data={AVAILABLE_DIFFICULTIES}
+			size="xs"
 			value={difficulty}
 			onChange={handleOnChange}
 		/>

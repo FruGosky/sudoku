@@ -2,7 +2,7 @@ import { FilledBrokenHearthIcon } from '../icons/FilledBrokenHeartIcon';
 import { FilledHearthIcon } from '../icons/FilledHearthIcon';
 import { useSudokuStore } from '../stores/useSudokuStore';
 
-export default function PlayerLives() {
+export function PlayerLives() {
 	const livesLeft = useSudokuStore((store) => store.livesLeft);
 
 	return (
@@ -22,13 +22,13 @@ function HearthIconDisplay() {
 		return (
 			<FilledBrokenHearthIcon
 				fill="var(--color-red-600)"
-				width={30}
 				height={30}
+				width={30}
 			/>
 		);
 	}
 
 	return (
-		<FilledHearthIcon fill="var(--color-red-600)" width={30} height={30} />
+		<FilledHearthIcon fill="var(--color-red-600)" height={30} width={30} />
 	);
 }

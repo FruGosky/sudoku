@@ -1,7 +1,7 @@
-import GameOverModal from './GameOverModal';
-import GameWonModal from './GameWonModal';
+import { GameOverModal } from './GameOverModal';
+import { GameWonModal } from './GameWonModal';
 
-export default function GameModalsLoader() {
+export function GameModalsLoader() {
 	return (
 		<>
 			<GameOverModal />
