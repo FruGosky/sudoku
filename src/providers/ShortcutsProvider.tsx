@@ -60,11 +60,7 @@ export function ShortcutsProvider({ children }: TShortcutsProviderProps) {
 		}
 	};
 	return (
-		<div
-			style={{ outline: 'none' }}
-			tabIndex={-1}
-			onKeyDown={handleKeyDown}
-		>
+		<div className="outline-none" tabIndex={-1} onKeyDown={handleKeyDown}>
 			{children}
 		</div>
 	);
