@@ -1,4 +1,5 @@
 import React, { type ReactNode } from 'react';
+import { TOGGLE_NOTE_MODE_BUTTONS, UNSELECT_ALL_BUTTONS } from '../constants';
 import { useSudokuStore } from '../stores/useSudokuStore';
 
 type TShortcutsProviderProps = {
@@ -40,13 +41,14 @@ export function ShortcutsProvider({ children }: TShortcutsProviderProps) {
 	const getState = useSudokuStore.getState;
 	const handleClickedNumber = useHandleClickedNumber();
 
-	const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-		const key = e.key.toUpperCase();
-		if (key === 'ESCAPE') {
+	const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+		const key = event.key.toUpperCase();
+		if (UNSELECT_ALL_BUTTONS.includes(key)) {
 			getState().unselectCell();
 			return;
 		}
-		if (key === 'N') {
+		if (TOGGLE_NOTE_MODE_BUTTONS.includes(key)) {
+			event.preventDefault();
 			getState().toggleNoteMode();
 			return;
 		}

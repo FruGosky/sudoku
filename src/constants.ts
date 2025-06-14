@@ -35,3 +35,7 @@ export const DIFFICULTY_PERCENTAGES: Record<TDifficulty, number> = {
 	hard: 0.2, // 20% of numbers shown
 } as const;
 export const DEFAULT_DIFFICULTY: TDifficulty = 'medium';
+
+// Shortcuts
+export const UNSELECT_ALL_BUTTONS = ['ESCAPE'];
+export const TOGGLE_NOTE_MODE_BUTTONS = ['N', 'TAB'];
