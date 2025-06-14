@@ -1,4 +1,5 @@
 import { useSudokuStore } from '../stores/useSudokuStore';
+import { cn } from '../utils/cn';
 import type { TCell } from '../types/game.types';
 
 type TNoteCellListProps = {
@@ -9,13 +10,7 @@ export function NoteCellList({ notes }: TNoteCellListProps) {
 	const size = useSudokuStore((store) => store.size);
 
 	return (
-		<div
-			className="grid h-full w-full text-center text-[0.7em] leading-[1.2em]"
-			style={{
-				gridTemplateColumns: `repeat(3, 1fr)`,
-				gridTemplateRows: `repeat(3, 1fr)`,
-			}}
-		>
+		<div className="grid h-full w-full grid-cols-3 grid-rows-3 text-center text-[0.7em] leading-[1.2em]">
 			{Array.from({ length: size }, (_, i) => {
 				const noteNumber = i + 1;
 				return (
@@ -49,15 +44,15 @@ function NoteCell({ notes, number }: TNoteCellProps) {
 		<span
 			key={number}
 			// add red font color if note cant be possible
-			className="pointer-events-none flex h-full w-full cursor-default items-center justify-center"
-			style={{
-				opacity: notes.includes(number) ? 1 : 0,
-				backgroundColor: shouldRevealNumber
-					? 'var(--color-blue-600)'
-					: 'unset',
-				color: shouldRevealNumber ? 'var(--color-white)' : 'unset',
-				borderRadius: shouldRevealNumber ? '100%' : 'unset',
-			}}
+			className={cn(
+				'pointer-events-none flex h-full w-full cursor-default items-center justify-center',
+				notes.includes(number) ? 'opacity-100' : 'opacity-0',
+				shouldRevealNumber && [
+					'bg-blue-600',
+					'text-white',
+					'rounded-full',
+				],
+			)}
 			tabIndex={-1}
 		>
 			{number}
