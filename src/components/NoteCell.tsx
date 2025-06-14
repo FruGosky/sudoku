@@ -40,8 +40,8 @@ function NoteCell({ notes, number }: TNoteCellProps) {
 		if (!notes.includes(number)) return false;
 		if (!store.selectedCell) return false;
 		return (
-			store.grid[store.selectedCell.row][store.selectedCell.col]
-				.correctValue === number
+			store.grid[store.selectedCell.row][store.selectedCell.col].value ===
+			number
 		);
 	});
 
