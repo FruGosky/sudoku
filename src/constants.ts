@@ -20,13 +20,6 @@ export const FADED_MODAL_TRANSITION: Partial<Omit<TransitionProps, 'mounted'>> =
 		timingFunction: 'linear',
 	};
 
-// RAGE
-export const RAGE_MESSAGE = 'RAGE';
-export const RAGE_LETTER_TIMEOUT = 100;
-export const RAGE_EXECUTION_TIME =
-	(RAGE_MESSAGE.length - 1) * RAGE_LETTER_TIMEOUT;
-export const TIME_TO_CLOSE_TAB_AFTER_RAGE = 300;
-
 // DIFFICULTY
 export const AVAILABLE_DIFFICULTIES = ['easy', 'medium', 'hard'] as const;
 export const DIFFICULTY_PERCENTAGES: Record<TDifficulty, number> = {
@@ -39,3 +32,27 @@ export const DEFAULT_DIFFICULTY: TDifficulty = 'medium';
 // Shortcuts
 export const UNSELECT_ALL_BUTTONS = ['ESCAPE'];
 export const TOGGLE_NOTE_MODE_BUTTONS = ['N', 'TAB'];
+
+// RAGE
+export const RAGE_BUTTON_TEXT = 'Rage Button 🤬';
+export const RAGE_MESSAGE = 'RAGE';
+export const RAGE_LETTER_TIMEOUT = 100;
+export const RAGE_EXECUTION_TIME =
+	(RAGE_MESSAGE.length - 1) * RAGE_LETTER_TIMEOUT;
+export const TIME_TO_CLOSE_TAB_AFTER_RAGE = 300;
+
+// PLAY AGAIN
+export const PLAY_AGAIN_BUTTON_TEXT = 'Play Again';
+
+// NOTE MODE
+export const NOTE_MODE_SWITCH_TOOLTIP = `Note mode (${TOGGLE_NOTE_MODE_BUTTONS.join(' / ')})`;
+
+// GAME OVER
+export const GAME_OVER_MODAL_TITLE = 'Game Over';
+export const GAME_OVER_MODAL_MESSAGE = 'You lost the game';
+export const GAME_OVER_EMOJI = '🥺';
+
+// GAME WON
+export const GAME_WON_MODAL_TITLE = 'Game Won';
+export const GAME_WON_MODAL_MESSAGE = 'Congrats u won the game!';
+export const GAME_WON_EMOJI = '🥵';

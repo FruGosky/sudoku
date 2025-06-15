@@ -5,6 +5,7 @@ import {
 	RAGE_MESSAGE,
 	RAGE_LETTER_TIMEOUT,
 	TIME_TO_CLOSE_TAB_AFTER_RAGE,
+	RAGE_BUTTON_TEXT,
 } from '../constants';
 
 const rageNotification = (message: string) => {
@@ -43,7 +44,7 @@ export function RageButton() {
 			size="xs"
 			onClick={void rageCloseTab}
 		>
-			{'Rage Button 🤬'}
+			{RAGE_BUTTON_TEXT}
 		</Button>
 	);
 }

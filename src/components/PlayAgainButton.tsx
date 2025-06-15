@@ -1,4 +1,5 @@
 import { Button } from '@mantine/core';
+import { PLAY_AGAIN_BUTTON_TEXT } from '../constants';
 import { useSudokuStore } from '../stores/useSudokuStore';
 
 export function PlayAgainButton() {
@@ -10,5 +11,5 @@ export function PlayAgainButton() {
 		resetGame();
 	};
 
-	return <Button onClick={playAgain}>{'Play Again'}</Button>;
+	return <Button onClick={playAgain}>{PLAY_AGAIN_BUTTON_TEXT}</Button>;
 }
