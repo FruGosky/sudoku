@@ -1,4 +1,4 @@
-import { Cell } from './Cell';
+import { Cell } from './Cell/Cell';
 import type { TCell } from '../types/game.types';
 
 type TRowProps = {
