@@ -42,7 +42,6 @@ function NoteCell({ notes, number }: TNoteCellProps) {
 
 	return (
 		<span
-			key={number}
 			// add red font color if note cant be possible
 			className={cn(
 				'pointer-events-none flex h-full w-full cursor-default items-center justify-center',

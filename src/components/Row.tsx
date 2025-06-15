@@ -8,7 +8,7 @@ type TRowProps = {
 
 export function Row({ row, rowIndex }: TRowProps) {
 	return (
-		<div key={rowIndex} className="flex">
+		<div className="flex">
 			{row.map((cell, cellIndex) => (
 				<Cell
 					key={cellIndex}

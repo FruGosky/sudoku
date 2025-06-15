@@ -54,7 +54,6 @@ export function Cell({ cell, rowIndex, colIndex }: TCellProps) {
 
 	return (
 		<div
-			key={`${rowIndex}-${colIndex}`}
 			className={cn(
 				'flex h-10 w-10 items-center justify-center border-1 border-solid select-none',
 				getFontClassNames(cell),
