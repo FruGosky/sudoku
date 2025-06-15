@@ -38,12 +38,12 @@ const rageCloseTab = async () => {
 };
 
 export function RageButton() {
+	const handleOnClick = () => {
+		void rageCloseTab();
+	};
+
 	return (
-		<Button
-			color="var(--color-red-900)"
-			size="xs"
-			onClick={void rageCloseTab}
-		>
+		<Button color="var(--color-red-900)" size="xs" onClick={handleOnClick}>
 			{RAGE_BUTTON_TEXT}
 		</Button>
 	);
