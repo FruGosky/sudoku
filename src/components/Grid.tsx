@@ -1,5 +1,5 @@
-import { useSudokuStore } from '../stores/useSudokuStore';
-import { Row } from './Row';
+import { Row } from '@components/Row';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 export function Grid() {
 	const grid = useSudokuStore((store) => store.grid);

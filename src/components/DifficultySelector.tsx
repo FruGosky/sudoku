@@ -1,7 +1,7 @@
 import { Select } from '@mantine/core';
-import { AVAILABLE_DIFFICULTIES } from '../constants';
-import { useSudokuStore } from '../stores/useSudokuStore';
-import type { TDifficulty } from '../types/game.types';
+import { AVAILABLE_DIFFICULTIES } from '@constants';
+import { useSudokuStore } from '@stores/useSudokuStore';
+import type { TDifficulty } from '@/types/game.types';
 
 export function DifficultySelector() {
 	const difficulty = useSudokuStore((store) => store.difficulty);

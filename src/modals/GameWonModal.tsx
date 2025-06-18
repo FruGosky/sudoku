@@ -1,11 +1,11 @@
-import { PlayAgainButton } from '../components/PlayAgainButton';
+import { PlayAgainButton } from '@components/PlayAgainButton';
 import {
 	GAME_WON_EMOJI,
 	GAME_WON_MODAL_MESSAGE,
 	GAME_WON_MODAL_TITLE,
-} from '../constants';
-import { useSudokuStore } from '../stores/useSudokuStore';
-import { GameResultModal } from './GameResultModal';
+} from '@constants';
+import { GameResultModal } from '@modals/GameResultModal';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 function GameWonFooter() {
 	return (

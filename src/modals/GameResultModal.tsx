@@ -1,5 +1,5 @@
 import { Modal } from '@mantine/core';
-import { FADED_MODAL_TRANSITION } from '../constants';
+import { FADED_MODAL_TRANSITION } from '@constants';
 
 type TTitleColor = 'green' | 'red';
 

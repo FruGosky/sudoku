@@ -1,5 +1,5 @@
-import { useSudokuStore } from '../stores/useSudokuStore';
-import type { TCell } from '../types/game.types';
+import { useSudokuStore } from '@stores/useSudokuStore';
+import type { TCell } from '@/types/game.types';
 
 export const useIsValueSelected = (value: TCell['value']) => {
 	const isValueSelected = useSudokuStore((store) => {

@@ -1,4 +1,4 @@
-import { AVAILABLE_DIFFICULTIES, VALID_GRID_SIZES } from '../constants';
+import { AVAILABLE_DIFFICULTIES, VALID_GRID_SIZES } from '@constants';
 
 export type TCell = {
 	value: number | null;

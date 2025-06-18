@@ -1,5 +1,5 @@
-import { DEFAULT_ICON_FILL, DEFAULT_ICON_SIZE_PX } from '../constants';
-import type { TIconProps } from '../types/icon.types';
+import { DEFAULT_ICON_FILL, DEFAULT_ICON_SIZE_PX } from '@constants';
+import type { TIconProps } from '@/types/icon.types';
 
 export function FilledHearthIcon({
 	width = DEFAULT_ICON_SIZE_PX,

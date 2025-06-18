@@ -1,5 +1,5 @@
-import { Cell } from './Cell/Cell';
-import type { TCell } from '../types/game.types';
+import { Cell } from '@components/Cell/Cell';
+import type { TCell } from '@/types/game.types';
 
 type TRowProps = {
 	row: TCell[];

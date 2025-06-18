@@ -5,14 +5,14 @@ import {
 	VALID_GRID_SIZES,
 	DIFFICULTY_PERCENTAGES,
 	DEFAULT_DIFFICULTY,
-} from '../constants';
-import { shuffleArray } from '../utils/shuffle-array';
+} from '@constants';
+import { shuffleArray } from '@utils/shuffle-array';
 import type {
 	TAvailableGameModals,
 	TCorrectGridSizes,
 	TGrid,
 	TDifficulty,
-} from '../types/game.types';
+} from '@/types/game.types';
 
 /**
  * Reveals random cells in the grid based on the difficulty level

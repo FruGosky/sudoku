@@ -1,5 +1,5 @@
-import { GameOverModal } from './GameOverModal';
-import { GameWonModal } from './GameWonModal';
+import { GameOverModal } from '@modals/GameOverModal';
+import { GameWonModal } from '@modals/GameWonModal';
 
 export function GameModalsLoader() {
 	return (

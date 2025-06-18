@@ -1,8 +1,8 @@
-import { useSudokuStore } from '../../stores/useSudokuStore';
-import { cn } from '../../utils/cn';
-import { NoteCellList } from '../NoteCell';
+import { NoteCellList } from '@components/NoteCell';
+import { useSudokuStore } from '@stores/useSudokuStore';
+import { cn } from '@utils/cn';
 import { useCellDynamicClassNames } from './hooks/useCellDynamicClassNames';
-import type { TCell } from '../../types/game.types';
+import type { TCell } from '@/types/game.types';
 
 type TCellProps = {
 	cell: TCell;

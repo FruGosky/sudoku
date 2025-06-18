@@ -1,6 +1,6 @@
-import { useSudokuStore } from '../stores/useSudokuStore';
-import { cn } from '../utils/cn';
-import type { TCell } from '../types/game.types';
+import { useSudokuStore } from '@stores/useSudokuStore';
+import { cn } from '@utils/cn';
+import type { TCell } from '@/types/game.types';
 
 type TNoteCellListProps = {
 	notes: TCell['notes'];

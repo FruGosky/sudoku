@@ -1,6 +1,6 @@
-import { DifficultySelector } from './DifficultySelector';
-import { NoteModeSwitch } from './NoteModeSwitch';
-import { PlayerLives } from './PlayerLives';
+import { DifficultySelector } from '@components/DifficultySelector';
+import { NoteModeSwitch } from '@components/NoteModeSwitch';
+import { PlayerLives } from '@components/PlayerLives';
 
 export function GameToolbar() {
 	return (

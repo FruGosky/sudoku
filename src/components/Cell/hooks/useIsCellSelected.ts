@@ -1,4 +1,4 @@
-import { useSudokuStore } from '../../../stores/useSudokuStore';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 export const useIsCellSelected = (rowIndex: number, colIndex: number) => {
 	const isSelected = useSudokuStore((store) => {

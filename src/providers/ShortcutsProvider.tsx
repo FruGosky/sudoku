@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
-import { TOGGLE_NOTE_MODE_BUTTONS, UNSELECT_ALL_BUTTONS } from '../constants';
-import { useSudokuStore } from '../stores/useSudokuStore';
+import { TOGGLE_NOTE_MODE_BUTTONS, UNSELECT_ALL_BUTTONS } from '@constants';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 type TShortcutsProviderProps = {
 	children: ReactNode;

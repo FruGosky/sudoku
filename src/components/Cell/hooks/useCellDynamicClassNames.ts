@@ -1,9 +1,9 @@
-import { useIsValueSelected } from '../../../hooks/useIsValueSelected';
-import { cn } from '../../../utils/cn';
+import { useIsValueSelected } from '@hooks/useIsValueSelected';
+import { cn } from '@utils/cn';
 import { getCellFontClassName } from '../helpers/getCellFontClassName';
 import { useGetGridSquareBgColorClassName } from './useGetGridSquareBgColorClassName';
 import { useIsCellSelected } from './useIsCellSelected';
-import type { TCell } from '../../../types/game.types';
+import type { TCell } from '@/types/game.types';
 
 export const useCellDynamicClassNames = (
 	cell: TCell,

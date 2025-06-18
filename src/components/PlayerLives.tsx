@@ -1,6 +1,6 @@
-import { FilledBrokenHearthIcon } from '../icons/FilledBrokenHeartIcon';
-import { FilledHearthIcon } from '../icons/FilledHearthIcon';
-import { useSudokuStore } from '../stores/useSudokuStore';
+import { FilledBrokenHearthIcon } from '@icons/FilledBrokenHeartIcon';
+import { FilledHearthIcon } from '@icons/FilledHearthIcon';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 export function PlayerLives() {
 	const livesLeft = useSudokuStore((store) => store.livesLeft);

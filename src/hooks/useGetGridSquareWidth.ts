@@ -1,4 +1,4 @@
-import { useSudokuStore } from '../stores/useSudokuStore';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 export const useGetGridSquareWidth = () => {
 	const size = useSudokuStore((store) => store.size);

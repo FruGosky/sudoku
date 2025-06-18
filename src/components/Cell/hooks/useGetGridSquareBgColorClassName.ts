@@ -1,4 +1,4 @@
-import { useGetGridSquareWidth } from '../../../hooks/useGetGridSquareWidth';
+import { useGetGridSquareWidth } from '@hooks/useGetGridSquareWidth';
 
 const getGridSquareBgColorClassName = (
 	rowIndex: number,

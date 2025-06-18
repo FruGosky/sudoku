@@ -1,4 +1,4 @@
-import type { TCorrectGridSizes, TDifficulty } from './types/game.types';
+import type { TCorrectGridSizes, TDifficulty } from '@/types/game.types';
 import type { TransitionProps } from '@mantine/core';
 
 // GRID

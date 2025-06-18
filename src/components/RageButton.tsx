@@ -6,7 +6,7 @@ import {
 	RAGE_LETTER_TIMEOUT,
 	TIME_TO_CLOSE_TAB_AFTER_RAGE,
 	RAGE_BUTTON_TEXT,
-} from '../constants';
+} from '@constants';
 
 const rageNotification = (message: string) => {
 	notifications.show({

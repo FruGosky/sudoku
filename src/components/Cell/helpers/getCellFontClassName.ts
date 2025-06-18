@@ -1,4 +1,4 @@
-import type { TCell } from '../../../types/game.types';
+import type { TCell } from '@/types/game.types';
 
 export const getCellFontClassName = (cell: TCell): string => {
 	if (!cell.value) return '';

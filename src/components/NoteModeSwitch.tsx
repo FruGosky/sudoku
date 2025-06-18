@@ -1,7 +1,7 @@
 import { ActionIcon, Tooltip } from '@mantine/core';
-import { NOTE_MODE_SWITCH_TOOLTIP } from '../constants';
-import { PencilIcon } from '../icons/PencilIcon';
-import { useSudokuStore } from '../stores/useSudokuStore';
+import { NOTE_MODE_SWITCH_TOOLTIP } from '@constants';
+import { PencilIcon } from '@icons/PencilIcon';
+import { useSudokuStore } from '@stores/useSudokuStore';
 
 export function NoteModeSwitch() {
 	const isNoteMode = useSudokuStore((store) => store.isNoteMode);

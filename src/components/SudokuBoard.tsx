@@ -1,7 +1,7 @@
-import { GameModalsLoader } from '../modals/GameModalsLoader';
-import { ShortcutsProvider } from '../providers/ShortcutsProvider';
-import { GameToolbar } from './GameToolbar';
-import { Grid } from './Grid';
+import { GameToolbar } from '@components/GameToolbar';
+import { Grid } from '@components/Grid';
+import { GameModalsLoader } from '@modals/GameModalsLoader';
+import { ShortcutsProvider } from '@providers/ShortcutsProvider';
 
 export function SudokuBoard() {
 	return (
